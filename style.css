@@ -22,19 +22,60 @@ button {
     border-radius: 50%;
     font-size: 18px;
     text-align: center;
+    cursor: pointer;
+    transition: color 200ms linear,background 200ms linear, border 200ms linear;
 }
 
 /* ++++++++++++++++++++++++++++++++++ */
 
 .loading {
-    display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
+    background-color: #fff;
+    z-index: 9999;
+    display: none;
 }
+
+.send_loading {
+    position: fixed;
+    background-color: rgba(255,255,255, .85);
+}
+
+.loading.active {
+    display: flex;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid rgb(79, 87, 160);
+    border-color: rgb(79, 87, 160) transparent rgb(79, 87, 160) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
 
 /* ================================== */
 
@@ -85,10 +126,13 @@ header h1 {
 footer {
     text-align: center;
     position: sticky;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 46px;
     bottom: 0;
     left: 0;
     height: 224px;
-    line-height: 224px;
     background: linear-gradient(180deg, rgba(249, 250, 251, 0) 0%, #F9FAFB 47.81%);
 }
 
@@ -141,11 +185,19 @@ form textarea {
     color: #94A3B8;
 }
 
+.form_buttons button:hover {
+    background: #94A3B8;
+    color: #E2E8F0;
+}
+
 #add {
     color: #E2E8F0;
     border: 3px solid #E2E8F0;
-    cursor: pointer;
-    transition: color 200ms linear, border 200ms linear;
+    display: none;
+}
+
+#add.active {
+    display: inline;
 }
 #add:hover {
     border: 3px solid #94A3B8;

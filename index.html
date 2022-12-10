@@ -14,7 +14,13 @@
 </head>
 <body>
 
-    <section class="loading"></section>
+    <section class="loading main_loading active">
+        <div class="lds-dual-ring"></div>
+    </section>
+
+    <section class="loading send_loading">
+        <div class="lds-dual-ring"></div>
+    </section>
 
     <header>
         <h1>todo list</h1>
@@ -23,21 +29,6 @@
 
     <main>
         <ul class="list">
-            <li class="list_item">
-                <h3 class="list_item_title">Lorem ipsum dolor</h3>
-                <p class="list_item_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                </p>
-            </li>
-            <li class="list_item">
-                <h3 class="list_item_title">Lorem ipsum dolor</h3>
-                <p class="list_item_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                </p>
-            </li>
-            <li class="list_item">
-                <h3 class="list_item_title">Lorem ipsum dolor</h3>
-                <p class="list_item_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                </p>
-            </li>
         </ul>
     </main>
     
@@ -54,10 +45,12 @@
                 <i class="fa-solid fa-check"></i>
             </button>
         </section>
-        <button id="add">
+        <button id="add" class="active">
             <i class="fa-solid fa-plus"></i>
         </button>
     </footer>
    
+
+    <script src="./script.js"></script>
 </body>
 </html>
