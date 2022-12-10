@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F9FAFB;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: 3px solid;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ++++++++++++++++++++++++++++++++++ */
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* ================================== */
+
+header {
+    padding: 35px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 87px;
+    letter-spacing: 0em;
+    color: #E2E8F0;
+    text-transform: uppercase;
+}
+
+.list {
+    width: 445px;
+    margin: 0 auto;
+}
+
+.list li {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 26px 34px 26px 34px;
+    margin-bottom: 34px;
+    overflow: hidden;
+}
+
+.list li h3{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #374151;
+}
+
+.list li p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    margin-top: 12px;
+    color: #6B7280;
+}
+
+footer {
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    height: 224px;
+    line-height: 224px;
+    background: linear-gradient(180deg, rgba(249, 250, 251, 0) 0%, #F9FAFB 47.81%);
+}
+
+
+form {
+    height: 331px;
+    width: 455px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: 42px;
+    position: absolute;
+    left: 50%;
+    bottom: 131px;
+    transform: translateX(-50%);
+    display: none;
+}
+form.active {
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 370px;
+    border-radius: 4px;
+    color: #374151;
+    border: 1px solid #F3F4F6;
+    padding: 14px;
+}
+
+form input {
+    height: 44px;
+    margin-bottom: 14px;
+}
+
+form textarea {
+    height: 70px;
+    resize: vertical;
+}
+
+.form_buttons {
+    display: none;
+}
+.form_buttons.active {
+    display: block;
+}
+
+.form_buttons button {
+    border: 3px solid #94A3B8;
+    color: #94A3B8;
+}
+
+#add {
+    color: #E2E8F0;
+    border: 3px solid #E2E8F0;
+    cursor: pointer;
+    transition: color 200ms linear, border 200ms linear;
+}
+#add:hover {
+    border: 3px solid #94A3B8;
+    color: #94A3B8;
+}

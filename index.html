@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- coustom css -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo List</title>
+</head>
+<body>
+
+    <section class="loading"></section>
+
+    <header>
+        <h1>todo list</h1>
+    </header>
+
+
+    <main>
+        <ul class="list">
+            <li class="list_item">
+                <h3 class="list_item_title">Lorem ipsum dolor</h3>
+                <p class="list_item_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+            </li>
+            <li class="list_item">
+                <h3 class="list_item_title">Lorem ipsum dolor</h3>
+                <p class="list_item_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+            </li>
+            <li class="list_item">
+                <h3 class="list_item_title">Lorem ipsum dolor</h3>
+                <p class="list_item_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+            </li>
+        </ul>
+    </main>
+    
+    <footer>
+            <form>
+                <input type="text" name="title" id="form_title" placeholder="Add the title">
+                <textarea name="body" id="form_body" placeholder="Add the body"></textarea>
+            </form>
+        <section class="form_buttons">
+            <button id="cancel">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="send">
+                <i class="fa-solid fa-check"></i>
+            </button>
+        </section>
+        <button id="add">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </footer>
+   
+</body>
+</html>
